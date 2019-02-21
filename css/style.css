@@ -1,7 +1,318 @@
-body {
+html , body {
+	margin: 0;
+	padding: 0;
+	font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 400;
+	color: #212529;
+	background-color: #3f1b0f;
+	background-image: url(../elmt/rangoli.png);
+	height: 100%;
+	width: 100%;
+}
+
+.head {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 30%;
+}
+
+.mid {
+	position: relative;
+	width: 100%;
+	height: 50%;
+	display: flex;
 
 }
 
-.curten {
-	
+.foot {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+}
+/* Home Desktop */
+
+.jharokha {
+	width: 100%;
+	position: relative;
+	height: fit-content;
+}
+
+.jharokha_img {
+	max-height: 100%;
+	width: 100%;
+}
+
+.logo {
+	width: 100%;
+	z-index: 20;
+	margin-top: -32%;
+	position: relative;
+	text-align: center;
+}
+
+.logo_img {
+	max-height: 86px;
+}
+
+.ren_logo {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 18px;
+	z-index: 20;
+	text-align: center;
+}
+
+.ren_img {
+	max-width: 695px;
+	max-height: 181px;
+	height: auto;
+	width: auto;
+}
+
+.hang1 { 
+	width: 16%;
+	margin-top: -283px;
+	position: relative;
+	margin-left: 40px;
+}
+
+.hang2 {
+	width: 16%;
+	margin-top: -283px;
+	position: relative;
+	margin-right: 40px;
+}
+
+.rangoli {
+	width: 60%;
+	margin: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.hang1_img {
+	display: block;
+	width: 100%;
+	height: 755px;
+}
+
+.hang1_icon {
+	display: block;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -7px;
+}
+
+.hang2_img {
+	display: block;
+	width: 100%;
+	height: 175px;
+}
+
+.hang2_icon {
+	display: block;
+	width: auto;
+	max-height: 100%;
+	max-width: 102%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -7px;
+}
+
+.rang_img {
+	width: 103%;
+	height: 89%;
+	z-index: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.cenline_img {
+	width: 33%;
+	top: 203px;
+	z-index: 1;
+	margin-left: 201px;
+	position: absolute;
+}
+
+/* Home Desktop End */
+
+
+/* Home mobile */
+
+.jharokha_mob {
+	width: 100%;
+	position: relative;
+	height: fit-content;
+}
+
+.jharokha_img_mob {
+	max-height: 100%;
+	width: 100%;
+}
+
+.logo_mob {
+	width: 100%;
+	z-index: 20;
+	margin-top: -32%;
+	position: relative;
+	text-align: center;
+}
+
+.logo_img_mob {
+	max-height: 86px;
+}
+
+.ren_logo_mob {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 18px;
+	z-index: 20;
+	text-align: center;
+}
+
+.ren_img_mob {
+	max-width: 695px;
+	max-height: 181px;
+	height: auto;
+	width: auto;
+}
+
+.hang1_mob { 
+	width: 16%;
+	margin-top: -283px;
+	position: relative;
+	margin-left: 40px;
+}
+
+.hang2_mob {
+	width: 16%;
+	margin-top: -283px;
+	position: relative;
+	margin-right: 40px;
+}
+
+.rangoli_mob {
+	width: 60%;
+	margin: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.hang1_img_mob {
+	display: block;
+	width: 100%;
+	height: 755px;
+}
+
+.hang1_icon_mob {
+	display: block;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -7px;
+}
+
+.hang2_img_mob {
+	display: block;
+	width: 100%;
+	height: 175px;
+}
+
+.hang2_icon_mob {
+	display: block;
+	width: auto;
+	max-height: 100%;
+	max-width: 102%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -7px;
+}
+
+.rang_img_mob {
+	width: 103%;
+	height: 89%;
+	z-index: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.cenline_img_mob {
+	width: 33%;
+	top: 203px;
+	z-index: 1;
+	margin-left: 201px;
+	position: absolute;
+}
+
+#rotateleft {
+	-webkit-animation: rotation 10s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+#rotateright {
+	-webkit-animation: rotation 10s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(-0deg);
+	}
+	to {
+		-webkit-transform: rotate(-359deg);
+	}
+}
+
+/* Home mob end */
+
+/* Footer */
+.tech-slideshow {
+	bottom: 0;
+	display: block;
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > img {
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 202px;
+	transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow .mover-1 {
+	animation: moveSlideshow 12s linear infinite;
+}
+
+@keyframes moveSlideshow {
+	100% { 
+		transform: translateX(-66.6666%);  
+	}
 }

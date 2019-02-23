@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Renaissance`19 | Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	
+</head>
+<body>
+	<div class="full">
+		<div class="jharokha">
+			<img src="elmt/jharokha_gate.png" class="jharokha_img">	
+		</div>
+		<div class="marg_top">
+		</div>
+		<div class="top-logo">
+			<div class="logo">
+				<img src="elmt/logo.png" class="logo_img" >
+			</div>
+			<div class="ren_logo">
+				<img src="elmt/ren.png" id="image" class="ren_img">
+			</div>
+		</div>
+		<div class="mid_desk">
+			<div class="hang1">
+				<div class="hang1_d1">
+					<img src="elmt/hang21.png" class="hang1_img">
+				</div>
+				<div class="hang1_d2 hover_icon">
+					<a href=""><img src="elmt/endavour.png" class="hang1_icon"></a>
+				</div>
+				<div class="hang2_d1">
+					<img src="elmt/hang22.png" class="hang2_img">
+				</div>
+				<div class="hang2_d2 hover_icon">
+					<a href=""><img src="elmt/zarurat.png" class="hang2_icon"></a>
+				</div>	
+			</div>
+			<div class="rangoli">
+				<img id="rotateleft" src="elmt/cen_piece.png" class="rang_img">
+				<img  src="elmt/cen_punch1.png" class="cenline_img cenpunch_ani">	
+			</div>
+			<div class="hang2">
+				<div class="hang3_d1">
+					<img src="elmt/hang11.png" class="hang3_img">
+				</div>
+				<div class="hang3_d2 hover_icon">
+					<a href=""><img src="elmt/splash.png" class="hang3_icon"></a>
+				</div>
+				<div class="hang4_d1">
+					<img src="elmt/hang12.png" class="hang4_img">
+				</div>
+				<div class="hang4_d2 hover_icon">
+					<a href="quant.html"><img src="elmt/quanta.png" class="hang4_icon"></a>
+				</div>	
+			</div>		
+		</div>
+		<div class="foot">
+			<footer class="tech-slideshow">
+				<img src="elmt/footer1.png" class="mover-1">
+			</footer>
+		</div>
+	</div>
+	<script type = "text/javascript">
+            
+    </script>
+	<script type="text/javascript">
+		const body = document.getElementsByTagName('body')[0]
+		const loaderHtml = `
+		<div id="center-preload">
+		<div id="suns">
+		<img class="ren-logo" src="elmt/ren-logo.png" alt="ren19-logo">
+		<div class="sunss" style="width: 16%;">
+		<img id="sun1" src="elmt/sun2.png" alt="sun2">
+		<img src="elmt/sun1.png" alt="" style="display: none;">
+		</div>
+		</div>
+		</div>`
+
+		body.insertAdjacentHTML('afterbegin', loaderHtml)
+		const image1 = 'elmt/sun1.png'
+		const image2 = 'elmt/sun2.png'
+
+		function changeImage () {
+			console.log('image is changing')
+			const currentImage = document.getElementById('sun1')
+			console.log(currentImage)
+			if (currentImage.alt === 'sun2') {
+				currentImage.src = 'elmt/sun1.png'
+				currentImage.alt = 'sun1'
+			} else {
+				currentImage.src = 'elmt/sun2.png'
+				currentImage.alt = 'sun2'
+			}
+		}
+		$(document).ready(() => {
+			const timerId = setInterval(changeImage, 80)
+			$(window).load(() => {
+				$('#center-preload').delay(2000).fadeOut('slow',"linear",function(){ clearInterval(timerId) })
+			})
+		})
+	</script>
+	<script src="js/logo_change.js"></script>
+</body>
+</html>

@@ -14,15 +14,23 @@
 		<div class="jharokha">
 			<div class="gate-contain Absolute-Center">
 
-				<div class="gate1 indent">
+				<div class="gate1 indent ">
 					<img class="gate_img door" src="elmt/gate.jpg" alt="">
 				</div>
-				<div class="gate2 indent">
+				<div class="gate2 indent ">
 					<img class="gate_img doorRight right" src="elmt/gate.jpg" alt="">
 				</div>
 			</div>
 			<img src="elmt/jharokha_gate.png" class="jharokha_img">	
-			<img src="elmt/padlock-closed.png" class="padlock-img lock" alt="">
+			<img src="elmt/padlock-closed.png" class="padlock-img padlock-ani lock" alt="">
+			<div class="knobs-left ">
+					<img src="elmt/knob_about.png"  alt="" class="knob-img hover_icon knob-about">
+					<img src="elmt/knob_gallery.png"  alt="" class="knob-img hover_icon knob-gallery">
+			</div>
+			<div class="knobs-right ">
+					<img src="elmt/knob_spnsr.png"  alt="" class="knob-img hover_icon knob-spnsr">
+					<img src="elmt/knob_social.png"  alt="" class="knob-img hover_icon knob-social">
+			</div>
 		</div>
 		<div class="marg_top">
 		</div>
@@ -76,25 +84,47 @@
 		</div>
 	</div>
 	<script type = "text/javascript">
-		var toggler = new Boolean();
+		var toggler = true;
 
 		$('.padlock-img').click(function(){
 			$('.door').toggleClass('doorOpen');
 
 			$('.doorRight').toggleClass('doorOpenRight');
-			if (toggler) {
-				$('.padlock-img').toggleClass("unlock");
+				
+			
+			if (toggler) {//locked config
+				$('.padlock-img').removeClass("lock1");
+				$('.knob-about').removeClass("moveAb-back");
+				$('.knob-social').removeClass("moveSocial-back");
+				$('.knob-spnsr').removeClass("moveSpnsr-back");
+				$('.knob-gallery').removeClass("moveGal-back");
+				$('.padlock-img').addClass("unlock");
+				$('.knob-about').addClass("moveAb");
+				$('.knob-social').addClass("moveSocial");
+				$('.knob-spnsr').addClass("moveSpnsr");
+				$('.knob-gallery').addClass("moveGal");
+				setTimeout(function() {
+				$('.jharokha').addClass('jharoka-back')},1500)
 				toggler=false;
 				console.log(toggler)
 			}
-			else {
-
-
-				$('.padlock-img').toggleClass("lock1");
+			else {//unlocked config
+				$('.knob-about').removeClass("moveAb");
+				$('.knob-social').removeClass("moveSocial");
+				$('.knob-spnsr').removeClass("moveSpnsr");
+				$('.knob-gallery').removeClass("moveGal");
+				$('.padlock-img').removeClass("unlock");
+				$('.padlock-img').addClass("lock1");
+				$('.knob-about').addClass("moveAb-back");
+				$('.knob-social').addClass("moveSocial-back");
+				$('.knob-spnsr').addClass("moveSpnsr-back");
+				$('.knob-gallery').addClass("moveGal-back");
+				$('.jharokha').removeClass('jharoka-back')
 				toggler=true;
 				console.log(toggler)
-			}	
-		});
+			}
+		});	
+			
 
 
 
@@ -116,9 +146,9 @@
 		const image2 = 'elmt/sun2.png'
 
 		function changeImage () {
-			console.log('image is changing')
+			// console.log('image is changing')
 			const currentImage = document.getElementById('sun1')
-			console.log(currentImage)
+			// console.log(currentImage)
 			if (currentImage.alt === 'sun2') {
 				currentImage.src = 'elmt/sun1.png'
 				currentImage.alt = 'sun1'

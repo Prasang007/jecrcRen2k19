@@ -13,17 +13,17 @@
 
 
 	<div class="full">
-	
+
 		<div class="jharokha">
-						<div class="gate-contain Absolute-Center">
-	
-	<div class="gate1 indent">
-		<img class="gate_img door" src="elmt/gate2_01.jpg" alt="">
-	</div>
-	<div class="gate2 indent">
-		<img class="gate_img doorRight right" src="elmt/gate2_01.jpg" alt="">
-	</div>
-</div>
+			<div class="gate-contain Absolute-Center">
+
+				<div class="gate1 indent">
+					<img class="gate_img door" src="elmt/gate.jpg" alt="">
+				</div>
+				<div class="gate2 indent">
+					<img class="gate_img doorRight right" src="elmt/gate.jpg" alt="">
+				</div>
+			</div>
 			<img src="elmt/jharokha_gate.png" class="jharokha_img">	
 			<img src="elmt/padlock-closed.png" class="padlock-img lock" alt="">
 		</div>
@@ -71,7 +71,7 @@
 				</div>	
 			</div>		
 		</div>
-	
+
 		<div class="foot">
 			<footer class="tech-slideshow">
 				<img src="elmt/footer1.png" class="mover-1">
@@ -79,29 +79,29 @@
 		</div>
 	</div>
 	<script type = "text/javascript">
-    			var toggler = new Boolean();
+		var toggler = new Boolean();
 
-				$('.padlock-img').click(function(){
-  			$('.door').toggleClass('doorOpen');
+		$('.padlock-img').click(function(){
+			$('.door').toggleClass('doorOpen');
 
-  			 $('.doorRight').toggleClass('doorOpenRight');
+			$('.doorRight').toggleClass('doorOpenRight');
 			if (toggler) {
-			$('.padlock-img').toggleClass("unlock");
-			toggler=false;
-			console.log(toggler)
-		}
-		else {
+				$('.padlock-img').toggleClass("unlock");
+				toggler=false;
+				console.log(toggler)
+			}
+			else {
 
 
-			$('.padlock-img').toggleClass("lock1");
-			toggler=true;
-			console.log(toggler)
-		}	
-			});
+				$('.padlock-img').toggleClass("lock1");
+				toggler=true;
+				console.log(toggler)
+			}	
+		});
 
-				
 
-  
+
+
 		const body = document.getElementsByTagName('body')[0]
 		const loaderHtml = `
 		<div id="center-preload">

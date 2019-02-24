@@ -100,26 +100,21 @@ html , body {
 	bottom: 20%;
 	left: 37.3% ;
 	right: auto;
+	transform: translateX(-50%)!important;
 }
-.unlock	{
-	animation: moveLock 2s;
-	animation-fill-mode: forwards;
-	/*margin: 0;*/
-}
-.lock1{
-	animation: moveLock1 2s;
-	animation-fill-mode: forwards;
-	/*margin:0;*/
-}
-
-@keyframes moveLock {
-	0% {margin: 25%;}
-	100%{margin: 100px;}
-}
-@keyframes moveLock1 {
-	0% {top:0;left: 0;}
-	100%{top: 70%;left: 50%;}
-}
+	.padlock-ani{
+		transform: scale(1);
+		animation: swing 0.3s ease-in-out alternate;
+		animation-iteration-count: infinite;
+	}
+	.padlock:hover{
+		animation: paused;
+		cursor: pointer;
+	}
+	@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+	}
 
 .doorOpenRight
 {
@@ -148,7 +143,214 @@ html , body {
 			left: 41.3%;
 
 		}
+
 	}
+
+	.unlock	{
+	animation: moveLock 2s;
+	animation-fill-mode: forwards;
+	/*margin: 0;*/
+}
+.lock1{
+	animation: moveLock1 2s;
+	animation-fill-mode: forwards;
+	/*margin:0;*/
+}
+
+@keyframes moveLock {
+	0%{}
+
+	100%{left:8%; }
+}
+@keyframes moveLock1 {
+	0% {left: 8%;}
+	
+	
+	100%{left: 50%;}
+}
+
+	/*KNOBS*/
+	.knobs-right, .knobs-left{
+		position: absolute;
+		display: table;
+		z-index: 6;
+		max-width: 7vw;
+		min-width: 7vw;
+		bottom: 10%;
+	}
+	.knob-img{
+		width: 100%;
+		object-fit: contain;
+		display: block;
+	}
+	.knob-about, .knob-spnsr{
+		margin-bottom: 30%; padding-bottom: 40%;
+	}
+
+	.knobs-left{
+		left: 25%;
+	}
+	.knobs-right{
+		right: 25%;
+	}
+@media only screen and (max-width: 900px){
+	.knobs-right, .knobs-left{
+		max-width: 14vw;
+		/*bottom: 20%;*/
+	}
+	.knob-about, .knob-spnsr{
+		margin-bottom: 40%; 
+		padding-bottom: 40%;
+	}
+}
+
+
+/*KNOBS MOVEMENT ANIMATION*/
+	.moveAb	{
+	animation: moveAbout 2s;
+	animation-fill-mode: forwards;
+	/*margin: 0;*/
+}
+.moveAb-back{
+	animation: moveAbout1 2s;
+	animation-fill-mode: forwards;
+	/*margin:0;*/
+}
+	.moveSocial	{
+	animation: moveSocial 2s;
+	animation-fill-mode: forwards;
+	/*margin: 0;*/
+}
+.moveSocial-back{
+	animation: moveSocial1 2s;
+	animation-fill-mode: forwards;
+	/*margin:0;*/
+}
+	.moveSpnsr	{
+	animation: moveSpnsr 2s;
+	animation-fill-mode: forwards;
+	/*margin: 0;*/
+}
+.moveSpnsr-back{
+	animation: moveSpnsr1 2s;
+	animation-fill-mode: forwards;
+	/*margin:0;*/
+}
+	.moveGal	{
+	animation: moveGal 2s;
+	animation-fill-mode: forwards;
+	/*margin: 0;*/
+}
+.moveGal-back{
+	animation: moveGal1 2s;
+	animation-fill-mode: forwards;
+	/*margin:0;*/
+}
+
+
+
+@keyframes moveSpnsr {
+	0%{}
+
+	100%{ transform: translateX(350%) translateY(-70%);}
+}
+@keyframes moveSpnsr1 {
+	0% {transform: translateX(350%) translateY(-70%);}
+	
+	
+	100%{}
+}
+@keyframes moveSocial {
+	0%{}
+
+	100%{ transform: translateX(350%) translateY(50%);}
+}
+@keyframes moveSocial1 {
+	0% {transform: translateX(350%) translateY(50%);}
+	
+	
+	100%{}
+}
+
+
+/*LEFT ANIMATIONS*/
+@keyframes moveAbout {
+	0%{}
+
+	100%{ transform: translateX(-350%) translateY(-70%);}
+}
+@keyframes moveAbout1 {
+	0% {transform: translateX(-350%) translateY(-70%);}
+	
+	
+	100%{transform: translate(0,0);}
+}
+@keyframes moveGal {
+	0%{}
+
+	100%{ transform: translateX(-350%) translateY(50%);}
+}
+@keyframes moveGal1 {
+	0% {transform: translateX(-350%) translateY(50%);}
+	
+	
+	100%{}
+}
+
+
+
+/*Animation for small*/
+
+@media only screen and (max-width: 900px){
+
+@keyframes moveSpnsr {
+	0%{}
+
+	100%{ transform: translateX(150%) translateY(-70%);}
+}
+@keyframes moveSpnsr1 {
+	0% {transform: translateX(150%) translateY(-70%);}
+	
+	
+	100%{}
+}
+@keyframes moveSocial {
+	0%{}
+
+	100%{ transform: translateX(150%) translateY(50%);}
+}
+@keyframes moveSocial1 {
+	0% {transform: translateX(150%) translateY(50%);}
+	
+	
+	100%{}
+}
+
+
+/*LEFT ANIMATIONS*/
+@keyframes moveAbout {
+	0%{}
+
+	100%{ transform: translateX(-150%) translateY(-70%);}
+}
+@keyframes moveAbout1 {
+	0% {transform: translateX(-150%) translateY(-70%);}
+	
+	
+	100%{transform: translate(0,0);}
+}
+@keyframes moveGal {
+	0%{}
+
+	100%{ transform: translateX(-150%) translateY(50%);}
+}
+@keyframes moveGal1 {
+	0% {transform: translateX(-150%) translateY(50%);}
+	
+	
+	100%{}
+}
+}
 	/*End*/
 
 
@@ -165,6 +367,9 @@ html , body {
 		height: 100%;
 		position: absolute;
 		z-index: 5;
+	}
+	.jharoka-back{
+		z-index: 4;
 	}
 	.jharokha_img {
 		width: 100%;

@@ -26,11 +26,17 @@ html , body {
 }
 
 .foot {
-	display: block;
+	/*display: block;*/
+	/*z-index: 55;*/
 	position: fixed;
 	width: 100%;
-	height: 9%;
+	height: auto;
 	bottom: 0;
+}
+.mover-1{
+	/*min-height:auto;*/
+	max-height: 12vh ;
+	width: 100%;
 }
 
 /* Loader */
@@ -760,7 +766,7 @@ html , body {
 	/* Home mob end */
 
 	/* Footer */
-
+/*
 	.tech-slideshow {
 		height: 100%;
 		width: 100%;
@@ -789,7 +795,7 @@ html , body {
 		100% { 
 			transform: translateX(-66.6666%);  
 		}
-	}
+	}*/
 
 	@keyframes moveIt1 {
 		0%,

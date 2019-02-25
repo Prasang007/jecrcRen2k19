@@ -102,19 +102,20 @@ html , body {
 	right: auto;
 	transform: translateX(-50%)!important;
 }
-.padlock-ani{
-	transform: scale(1);
-	animation: swing 0.3s ease-in-out alternate;
-	animation-iteration-count: infinite;
-}
-.padlock:hover{
-	animation: paused;
-	cursor: pointer;
-}
-@keyframes swing {
-	0% { transform: rotate(3deg); }
-	100% { transform: rotate(-3deg); }
-}
+	.padlock-ani{
+		transform: scale(1);
+		animation: swing1 0.3s ease-in-out alternate;
+		animation-iteration-count: infinite;
+	}
+	.padlock:hover{
+		animation: paused;
+		cursor: pointer;
+	}
+	@keyframes swing1 {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+	}
+
 
 .doorOpenRight
 {
@@ -164,8 +165,8 @@ html , body {
 	}
 	@keyframes moveLock1 {
 		0% {left: 8%;}
-		
-		
+
+
 		100%{left: 50%;}
 	}
 
@@ -256,8 +257,8 @@ html , body {
 	}
 	@keyframes moveSpnsr1 {
 		0% {transform: translateX(350%) translateY(-70%);}
-		
-		
+
+
 		100%{}
 	}
 	@keyframes moveSocial {
@@ -267,8 +268,8 @@ html , body {
 	}
 	@keyframes moveSocial1 {
 		0% {transform: translateX(350%) translateY(50%);}
-		
-		
+
+
 		100%{}
 	}
 
@@ -281,8 +282,8 @@ html , body {
 	}
 	@keyframes moveAbout1 {
 		0% {transform: translateX(-350%) translateY(-70%);}
-		
-		
+
+
 		100%{transform: translate(0,0);}
 	}
 	@keyframes moveGal {
@@ -292,8 +293,8 @@ html , body {
 	}
 	@keyframes moveGal1 {
 		0% {transform: translateX(-350%) translateY(50%);}
-		
-		
+
+
 		100%{}
 	}
 
@@ -310,8 +311,8 @@ html , body {
 		}
 		@keyframes moveSpnsr1 {
 			0% {transform: translateX(150%) translateY(-70%);}
-			
-			
+
+
 			100%{}
 		}
 		@keyframes moveSocial {
@@ -321,8 +322,8 @@ html , body {
 		}
 		@keyframes moveSocial1 {
 			0% {transform: translateX(150%) translateY(50%);}
-			
-			
+
+
 			100%{}
 		}
 
@@ -335,8 +336,8 @@ html , body {
 		}
 		@keyframes moveAbout1 {
 			0% {transform: translateX(-150%) translateY(-70%);}
-			
-			
+
+
 			100%{transform: translate(0,0);}
 		}
 		@keyframes moveGal {
@@ -346,8 +347,8 @@ html , body {
 		}
 		@keyframes moveGal1 {
 			0% {transform: translateX(-150%) translateY(50%);}
-			
-			
+
+
 			100%{}
 		}
 	}
@@ -1016,4 +1017,48 @@ html , body {
 	.dept_team {
 		width: 80%;
 		height: 93%;
+	}
+	.mid_team {
+		width: 100%;
+		height: 50%;
+		margin-top: 50px;
+		display: block;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.team_img{
+		width: auto;
+		height: 190px;
+	}
+
+	.team_name {
+		font-family: 'Open Sans', sans-serif;
+		color: #8BC34A;
+		font-size: 27px;
+	}
+	.team_title{
+		font-family: 'Open Sans', sans-serif;
+		color: #fdfdfd;
+		font-size: 15px;
+	}
+
+	/*PLATES ANIMATIONS*/
+	.team-img{
+		left:13%;
+	}
+	.support-img{
+		right: 13%;
+	}
+	.plate{
+		position: absolute;
+		z-index: 6;
+		max-width: 12vw;
+		min-width: 9vw;
+		top:5%;
+	}
+	@media only screen and (max-width: 900px){
+		.plate{
+			top: 8%;
+		}
 	}

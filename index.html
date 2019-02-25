@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Renaissance`19 | Home</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<script src="js/jquery.min.js"></script>
-	
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
 	<div class="full">
@@ -24,13 +24,15 @@
 			<img src="elmt/jharokha_gate.png" class="jharokha_img">	
 			<img src="elmt/padlock-closed.png" class="padlock-img padlock-ani lock" alt="">
 			<div class="knobs-left ">
-					<img src="elmt/knob_about.png"  alt="" class="knob-img hover_icon knob-about">
-					<img src="elmt/knob_gallery.png"  alt="" class="knob-img hover_icon knob-gallery">
+				<a href="#"><img src="elmt/knob_about.png" alt="" class="knob-img hover_icon knob-about"></a>
+				<a href="gallery.html"><img src="elmt/knob_gallery.png"  alt="" class="knob-img hover_icon knob-gallery"></a>
 			</div>
 			<div class="knobs-right ">
-					<img src="elmt/knob_spnsr.png"  alt="" class="knob-img hover_icon knob-spnsr">
-					<img src="elmt/knob_social.png"  alt="" class="knob-img hover_icon knob-social">
+				<a href="#"><img src="elmt/knob_spnsr.png"  alt="" class="knob-img hover_icon knob-spnsr"></a>	
+				<a href="social_media.html"><img src="elmt/knob_social.png" alt="" class="knob-img hover_icon knob-social"></a>
 			</div>
+		<a href="team.html"><img src="elmt/team.png" class="plate team-img animated zoomIn delay-1000s" alt="" ></a>
+		<a href="#"><img src="elmt/support.png" class="plate support-img animated zoomIn delay-1000s" alt=""></a>
 		</div>
 		<div class="marg_top">
 		</div>
@@ -48,13 +50,13 @@
 					<img src="elmt/hang21.png" class="hang1_img">
 				</div>
 				<div class="hang1_d2 hover_icon">
-					<a href=""><img src="elmt/endavour.png" class="hang1_icon"></a>
+					<a href="endeavour.html"><img src="elmt/endavour.png" class="hang1_icon"></a>
 				</div>
 				<div class="hang2_d1">
 					<img src="elmt/hang22.png" class="hang2_img">
 				</div>
 				<div class="hang2_d2 hover_icon">
-					<a href=""><img src="elmt/zarurat.png" class="hang2_icon"></a>
+					<a href="zarurat.html"><img src="elmt/zarurat.png" class="hang2_icon"></a>
 				</div>	
 			</div>
 			<div class="rangoli">
@@ -66,13 +68,13 @@
 					<img src="elmt/hang11.png" class="hang3_img">
 				</div>
 				<div class="hang3_d2 hover_icon">
-					<a href=""><img src="elmt/splash.png" class="hang3_icon"></a>
+					<a href="splash.html"><img src="elmt/splash.png" class="hang3_icon"></a>
 				</div>
 				<div class="hang4_d1">
 					<img src="elmt/hang12.png" class="hang4_img">
 				</div>
 				<div class="hang4_d2 hover_icon">
-					<a href="quant.html"><img src="elmt/quanta.png" class="hang4_icon"></a>
+					<a href="quanta.html"><img src="elmt/quanta.png" class="hang4_icon"></a>
 				</div>	
 			</div>		
 		</div>
@@ -90,7 +92,7 @@
 			$('.door').toggleClass('doorOpen');
 
 			$('.doorRight').toggleClass('doorOpenRight');
-				
+
 			
 			if (toggler) {//locked config
 				$('.padlock-img').removeClass("lock1");
@@ -104,7 +106,7 @@
 				$('.knob-spnsr').addClass("moveSpnsr");
 				$('.knob-gallery').addClass("moveGal");
 				setTimeout(function() {
-				$('.jharokha').addClass('jharoka-back')},1500)
+					$('.jharokha').addClass('jharoka-back')},1500)
 				toggler=false;
 				console.log(toggler)
 			}
@@ -124,7 +126,7 @@
 				console.log(toggler)
 			}
 		});	
-			
+
 
 
 

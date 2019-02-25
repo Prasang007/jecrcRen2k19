@@ -104,17 +104,18 @@ html , body {
 }
 	.padlock-ani{
 		transform: scale(1);
-		animation: swing 0.3s ease-in-out alternate;
+		animation: swing1 0.3s ease-in-out alternate;
 		animation-iteration-count: infinite;
 	}
 	.padlock:hover{
 		animation: paused;
 		cursor: pointer;
 	}
-	@keyframes swing {
+	@keyframes swing1 {
     0% { transform: rotate(3deg); }
     100% { transform: rotate(-3deg); }
 	}
+
 
 .doorOpenRight
 {
@@ -147,27 +148,27 @@ html , body {
 	}
 
 	.unlock	{
-	animation: moveLock 2s;
-	animation-fill-mode: forwards;
-	/*margin: 0;*/
-}
-.lock1{
-	animation: moveLock1 2s;
-	animation-fill-mode: forwards;
-	/*margin:0;*/
-}
+		animation: moveLock 2s;
+		animation-fill-mode: forwards;
+		/*margin: 0;*/
+	}
+	.lock1{
+		animation: moveLock1 2s;
+		animation-fill-mode: forwards;
+		/*margin:0;*/
+	}
 
-@keyframes moveLock {
-	0%{}
+	@keyframes moveLock {
+		0%{}
 
-	100%{left:8%; }
-}
-@keyframes moveLock1 {
-	0% {left: 8%;}
-	
-	
-	100%{left: 50%;}
-}
+		100%{left:8%; }
+	}
+	@keyframes moveLock1 {
+		0% {left: 8%;}
+
+
+		100%{left: 50%;}
+	}
 
 	/*KNOBS*/
 	.knobs-right, .knobs-left{
@@ -193,164 +194,164 @@ html , body {
 	.knobs-right{
 		right: 25%;
 	}
-@media only screen and (max-width: 900px){
-	.knobs-right, .knobs-left{
-		max-width: 14vw;
-		/*bottom: 20%;*/
+	@media only screen and (max-width: 900px){
+		.knobs-right, .knobs-left{
+			max-width: 14vw;
+			/*bottom: 20%;*/
+		}
+		.knob-about, .knob-spnsr{
+			margin-bottom: 40%; 
+			padding-bottom: 40%;
+		}
 	}
-	.knob-about, .knob-spnsr{
-		margin-bottom: 40%; 
-		padding-bottom: 40%;
-	}
-}
 
 
-/*KNOBS MOVEMENT ANIMATION*/
+	/*KNOBS MOVEMENT ANIMATION*/
 	.moveAb	{
-	animation: moveAbout 2s;
-	animation-fill-mode: forwards;
-	/*margin: 0;*/
-}
-.moveAb-back{
-	animation: moveAbout1 2s;
-	animation-fill-mode: forwards;
-	/*margin:0;*/
-}
+		animation: moveAbout 2s;
+		animation-fill-mode: forwards;
+		/*margin: 0;*/
+	}
+	.moveAb-back{
+		animation: moveAbout1 2s;
+		animation-fill-mode: forwards;
+		/*margin:0;*/
+	}
 	.moveSocial	{
-	animation: moveSocial 2s;
-	animation-fill-mode: forwards;
-	/*margin: 0;*/
-}
-.moveSocial-back{
-	animation: moveSocial1 2s;
-	animation-fill-mode: forwards;
-	/*margin:0;*/
-}
+		animation: moveSocial 2s;
+		animation-fill-mode: forwards;
+		/*margin: 0;*/
+	}
+	.moveSocial-back{
+		animation: moveSocial1 2s;
+		animation-fill-mode: forwards;
+		/*margin:0;*/
+	}
 	.moveSpnsr	{
-	animation: moveSpnsr 2s;
-	animation-fill-mode: forwards;
-	/*margin: 0;*/
-}
-.moveSpnsr-back{
-	animation: moveSpnsr1 2s;
-	animation-fill-mode: forwards;
-	/*margin:0;*/
-}
+		animation: moveSpnsr 2s;
+		animation-fill-mode: forwards;
+		/*margin: 0;*/
+	}
+	.moveSpnsr-back{
+		animation: moveSpnsr1 2s;
+		animation-fill-mode: forwards;
+		/*margin:0;*/
+	}
 	.moveGal	{
-	animation: moveGal 2s;
-	animation-fill-mode: forwards;
-	/*margin: 0;*/
-}
-.moveGal-back{
-	animation: moveGal1 2s;
-	animation-fill-mode: forwards;
-	/*margin:0;*/
-}
+		animation: moveGal 2s;
+		animation-fill-mode: forwards;
+		/*margin: 0;*/
+	}
+	.moveGal-back{
+		animation: moveGal1 2s;
+		animation-fill-mode: forwards;
+		/*margin:0;*/
+	}
 
 
 
-@keyframes moveSpnsr {
-	0%{}
+	@keyframes moveSpnsr {
+		0%{}
 
-	100%{ transform: translateX(350%) translateY(-70%);}
-}
-@keyframes moveSpnsr1 {
-	0% {transform: translateX(350%) translateY(-70%);}
-	
-	
-	100%{}
-}
-@keyframes moveSocial {
-	0%{}
-
-	100%{ transform: translateX(350%) translateY(50%);}
-}
-@keyframes moveSocial1 {
-	0% {transform: translateX(350%) translateY(50%);}
-	
-	
-	100%{}
-}
+		100%{ transform: translateX(350%) translateY(-70%);}
+	}
+	@keyframes moveSpnsr1 {
+		0% {transform: translateX(350%) translateY(-70%);}
 
 
-/*LEFT ANIMATIONS*/
-@keyframes moveAbout {
-	0%{}
+		100%{}
+	}
+	@keyframes moveSocial {
+		0%{}
 
-	100%{ transform: translateX(-350%) translateY(-70%);}
-}
-@keyframes moveAbout1 {
-	0% {transform: translateX(-350%) translateY(-70%);}
-	
-	
-	100%{transform: translate(0,0);}
-}
-@keyframes moveGal {
-	0%{}
-
-	100%{ transform: translateX(-350%) translateY(50%);}
-}
-@keyframes moveGal1 {
-	0% {transform: translateX(-350%) translateY(50%);}
-	
-	
-	100%{}
-}
+		100%{ transform: translateX(350%) translateY(50%);}
+	}
+	@keyframes moveSocial1 {
+		0% {transform: translateX(350%) translateY(50%);}
 
 
-
-/*Animation for small*/
-
-@media only screen and (max-width: 900px){
-
-@keyframes moveSpnsr {
-	0%{}
-
-	100%{ transform: translateX(150%) translateY(-70%);}
-}
-@keyframes moveSpnsr1 {
-	0% {transform: translateX(150%) translateY(-70%);}
-	
-	
-	100%{}
-}
-@keyframes moveSocial {
-	0%{}
-
-	100%{ transform: translateX(150%) translateY(50%);}
-}
-@keyframes moveSocial1 {
-	0% {transform: translateX(150%) translateY(50%);}
-	
-	
-	100%{}
-}
+		100%{}
+	}
 
 
-/*LEFT ANIMATIONS*/
-@keyframes moveAbout {
-	0%{}
+	/*LEFT ANIMATIONS*/
+	@keyframes moveAbout {
+		0%{}
 
-	100%{ transform: translateX(-150%) translateY(-70%);}
-}
-@keyframes moveAbout1 {
-	0% {transform: translateX(-150%) translateY(-70%);}
-	
-	
-	100%{transform: translate(0,0);}
-}
-@keyframes moveGal {
-	0%{}
+		100%{ transform: translateX(-350%) translateY(-70%);}
+	}
+	@keyframes moveAbout1 {
+		0% {transform: translateX(-350%) translateY(-70%);}
 
-	100%{ transform: translateX(-150%) translateY(50%);}
-}
-@keyframes moveGal1 {
-	0% {transform: translateX(-150%) translateY(50%);}
-	
-	
-	100%{}
-}
-}
+
+		100%{transform: translate(0,0);}
+	}
+	@keyframes moveGal {
+		0%{}
+
+		100%{ transform: translateX(-350%) translateY(50%);}
+	}
+	@keyframes moveGal1 {
+		0% {transform: translateX(-350%) translateY(50%);}
+
+
+		100%{}
+	}
+
+
+
+	/*Animation for small*/
+
+	@media only screen and (max-width: 900px){
+
+		@keyframes moveSpnsr {
+			0%{}
+
+			100%{ transform: translateX(150%) translateY(-70%);}
+		}
+		@keyframes moveSpnsr1 {
+			0% {transform: translateX(150%) translateY(-70%);}
+
+
+			100%{}
+		}
+		@keyframes moveSocial {
+			0%{}
+
+			100%{ transform: translateX(150%) translateY(50%);}
+		}
+		@keyframes moveSocial1 {
+			0% {transform: translateX(150%) translateY(50%);}
+
+
+			100%{}
+		}
+
+
+		/*LEFT ANIMATIONS*/
+		@keyframes moveAbout {
+			0%{}
+
+			100%{ transform: translateX(-150%) translateY(-70%);}
+		}
+		@keyframes moveAbout1 {
+			0% {transform: translateX(-150%) translateY(-70%);}
+
+
+			100%{transform: translate(0,0);}
+		}
+		@keyframes moveGal {
+			0%{}
+
+			100%{ transform: translateX(-150%) translateY(50%);}
+		}
+		@keyframes moveGal1 {
+			0% {transform: translateX(-150%) translateY(50%);}
+
+
+			100%{}
+		}
+	}
 	/*End*/
 
 
@@ -831,168 +832,233 @@ html , body {
 	}
 
 	.quant_in{
-  width: 100%;
-  height:100%;
-  position: fixed;
-}
+		width: 100%;
+		height:100%;
+		position: fixed;
+	}
 
-.jharokha_in{
-  width: 100%;
-  height: 82%;
-  position: absolute;
+	.jharokha_in {
+		width: 100%;
+		height: 67%;
+		position: absolute;
+	}
 
-}
+	.jharokhain_img{
+		width: 100%;
+		height:100%;
+	}
 
-.jharokhain_img{
-  width: 100%;
-  height:100%;
-}
+	.margin_top{
+		width: 100%;
+		height: 17%;
+	}
 
-.margin_top{
-  width: 100%;
-  height: 17%;
-}
+	.topin_logo{
+		width: 100%;
+		height: 25%;
+	}
+	.logo_in{
+		width: 100%;
+		height: 40%;
+		display: block;
+		text-align: center;
+		position: relative;
+	}
 
-.topin_logo{
-  width: 100%;
-  height: 25%;
-}
-.logo_in{
- width: 100%;
- height: 40%;
- display: block;
- text-align: center;
- position: relative;
-}
+	.logoin_img{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: scale-down;
+		margin-left: auto;
+		margin-right: auto;
 
-.logoin_img{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;
-  margin-left: auto;
-  margin-right: auto;
+	}
 
-}
+	.renlogo_in{
+		width: 100%;
+		height: 60%;
+		display: block;
+		text-align: center;
+		position: relative;
+	}
 
-.renlogo_in{
-  width: 100%;
-  height: 60%;
-  display: block;
-  text-align: center;
-  position: relative;
-}
+	.renin_img{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		max-width: 509px;
+		object-fit: fill;
+	}
 
-.renin_img{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 509px;
-  object-fit: fill;
-}
+	@media only screen and (max-width: 900px){
+		.renlogo_in{
+			width: 57%;
+			margin-left: auto;
+			margin-right: auto; 
+		}
 
-@media only screen and (max-width: 900px){
-  .renlogo_in{
-    width: 57%;
-    margin-left: auto;
-    margin-right: auto; 
-  }
+		.logo_in{
+			width: 17%;
+			margin-left: auto;
+			margin-right: auto; 
+		}
+	}
+	.mid_in{
+		width: 100%;
+		height: 50%;
+		margin-top: 5%;
+		display: block;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
-  .logo_in{
-    width: 17%;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-}
-.mid_in{
-  width: 100%;
-  height: 50%;
-  margin-top: 5%;
-  display: block;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-}
+	@media only screen and (max-width: 900px){
+		.mid_in{
+			width: 100%;
+			height: 50%;
+			margin-top: 5%;
+			display: block;
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.owl-carousel .owl-stage-outer {
+			position: relative;
+			overflow: hidden;
+			-webkit-transform: translate3d(0px,0,0);
+			margin-left: 30px;
+		} 
+	}
 
-@media only screen and (max-width: 900px){
-.mid_in{
-  width: 100%;
-  height: 50%;
-  margin-top: 5%;
-  display: block;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-}
-.owl-carousel .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0px,0,0);
-    margin-left: 30px;
-} 
-}
+	.frame1{
+		position: relative;
+	}
 
-.frame1{
-  position: relative;
-}
+	.frame1_img{
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+	.frame1_icon{
+		position: absolute;
+		width: 80%;
 
-.frame1_img{
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.frame1_icon{
-  position: absolute;
-  width: 80%;
+	}
 
-}
-
-.owl-item.center > div:after {
-  content: '';
-}
-.owl-item.active.center > div:after {
-  content: '';
-}
-.owl-item > div:after {
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-}
+	.owl-item.center > div:after {
+		content: '';
+	}
+	.owl-item.active.center > div:after {
+		content: '';
+	}
+	.owl-item > div:after {
+		font-family: sans-serif;
+		font-size: 24px;
+		font-weight: bold;
+	}
 
 
-.img-fluid1{
-  height: 150px;
-  width: auto;
-}
+	.img-fluid1{
+		height: 150px;
+		width: auto;
+	}
 
-.topframe_left{
-  position: relative;
-  width: 100%;
-  top: 61px;
-  max-width: 100%;
-  max-height: 100%;
-}
+	.topframe_left{
+		position: relative;
+		width: 100%;
+		top: 46px;
+		max-width: 100%;
+		max-height: 100%;
+	}
 
-.topframe_right{
-  position: relative;
-  width: 100%;
-  top: 61px;
-  max-width: 100%;
-  max-height: 100%;
-}
+	.topframe_right{
+		position: relative;
+		width: 100%;
+		top: 46px;
+		max-width: 100%;
+		max-height: 100%;
+	}
 
-.top_left {
-  position: relative;
-  width: 10%;
-  height: 100%;
-  margin-left: 22px;
-  float: left;
-}
+	.top_left {
+		position: relative;
+		width: 10%;
+		height: 100%;
+		margin-left: 22px;
+		float: left;
+	}
 
-.top_right{
-  position: relative;
-  width: 10%;
-  height: 100%;
-  margin-right: 22px;
-  float: right;
-}
+	.top_right{
+		position: relative;
+		width: 10%;
+		height: 100%;
+		margin-right: 22px;
+		float: right;
+	}
+	.dept_qant{
+		width: 100%;
+		height: 100%;
+	}
+
+	.marg_dept{
+		margin: auto;
+	}
+	.mid_quant{
+		width: 100%;
+		height: 50%;
+		margin-top: 148px;
+		display: block;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.dept_team {
+		width: 80%;
+		height: 93%;
+	}
+	.mid_team {
+		width: 100%;
+		height: 50%;
+		margin-top: 50px;
+		display: block;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.team_img{
+		width: auto;
+		height: 190px;
+	}
+
+	.team_name {
+		font-family: 'Open Sans', sans-serif;
+		color: #8BC34A;
+		font-size: 27px;
+	}
+	.team_title{
+		font-family: 'Open Sans', sans-serif;
+		color: #fdfdfd;
+		font-size: 15px;
+	}
+
+	/*PLATES ANIMATIONS*/
+	.team-img{
+		left:13%;
+	}
+	.support-img{
+		right: 13%;
+	}
+	.plate{
+		position: absolute;
+		z-index: 6;
+		max-width: 12vw;
+		min-width: 9vw;
+		top:5%;
+	}
+	@media only screen and (max-width: 900px){
+		.plate{
+			top: 8%;
+		}
+	}

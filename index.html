@@ -9,10 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
-    <style>
-		
-	
-	</style>
+ 
 </head>
 <body>
 	<div class="full">
@@ -32,8 +29,10 @@
 			<img src="elmt/pillar22.png" class="pillar r " alt="">
 			<img src="elmt/padlock-closed.png" class="padlock-img padlock-ani lock" alt="">
 			<div class="knobs-left ">
-				<a href="about_us"><img src="elmt/knob_about.png" alt="" class="knob-img hover_icon knob-about"></a>
-				<a href="gallery.html"><img src="elmt/knob_gallery.png"  alt="" class="knob-img hover_icon knob-gallery"></a>
+				
+				<a href="#"><img src="elmt/knob_about.png" alt="" class="knob-img hover_icon knob-about"></a>
+				<a href="gallery/gallery.html"><img src="elmt/knob_gallery.png"  alt="" class="knob-img hover_icon knob-gallery"></a>
+
 			</div>
 			<div class="knobs-right ">
 				<a href="gallery/sponsorship.html"><img src="elmt/knob_spnsr .png"  alt="" class="knob-img hover_icon knob-spnsr"></a>	
@@ -175,7 +174,6 @@
 			if (DocWidth<500) {
 			$(".overlay").width("100%")
 			$(".swords_img").removeClass("inactive")
-			// $(".overlay").height("100%")
 		}
 		})
 		$(".swords_img").click(()=>
@@ -183,8 +181,6 @@
 			$(".overlay").width("0%")
 			$(".swords_img").addClass("inactive")
 		})
-
-
 
 		const body = document.getElementsByTagName('body')[0]
 		const loaderHtml = `
@@ -228,6 +224,7 @@
 					$('.jharokha_img').attr("src","elmt/jharokha_gate.png")
 					$('.jharokha_img').addClass("jharokha1")
 					$('.jharokha_img').removeClass("jharokha2")
+					$('.jharokha').addClass("jharoka-back")
 					$('.gate-contain').remove()
 					$('.knobs-right').remove()
 					$('.knobs-left').remove()
@@ -251,6 +248,7 @@
 
 				}
 			})
+		})
 
 			$(window).resize(() =>{
 					var DocWidth = $(window).width()
@@ -276,10 +274,10 @@
 					$('.hang3_icon').addClass("cenpunch_ani")
 					$('.hang4_icon').addClass("cenpunch_ani")
 				}
+					
 				
-			})
-
 		})
+
 	</script>
 	<script src="js/logo_change.js"></script>
 </body>

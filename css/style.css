@@ -489,6 +489,7 @@ html , body {
 		.hang1, .hang2{
 			height: 110%;
 			margin-top: 0px;
+			width: 25%;
 		}
 	}
 

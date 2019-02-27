@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
  
 </head>
@@ -24,8 +24,8 @@
 				</div>
 			</div>
 			<!-- <img src="elmt/jharokha_gate.png" class="jharokha_img jharokha1 inactive">	 -->
-			<img src="elmt/pillarc.png" class="l pillar" alt="pillar left">
-			<img src="elmt/pillar22.png" class="r pillar" alt="pillar right">
+			<img src="elmt/pillar-r.png" class="l pillar" alt="pillar left">
+			<img src="elmt/pillar-l.png" class="r pillar" alt="pillar right">
 			<div class="boi">
 			<img src="elmt/jarokha_gate_final.png" class="jharokha2 jharokha_img">
 			</div>
@@ -108,7 +108,7 @@
 
 			<footer class=" foot">
 				<div class="tech-slide">
-				<img src="elmt/footerhorizontal.png" class=" mover-1">
+				<img src="elmt/food.png" class=" mover-1">
 				</div>
 			</footer>
 
@@ -118,7 +118,7 @@
 	var DocWidth = $(window).width()
 		$('.tech-slide').marquee({
     //speed in milliseconds of the marquee
-    duration: 10000,
+    duration: 15000,
     //gap in pixels between the tickers
     gap: 0,
     //time in milliseconds before the marquee will start animating
@@ -215,7 +215,7 @@
 
 
 		}
-
+		var DocHeight = $(window).height()
 		$(document).ready(() => {
 			
 			const timerId = setInterval(changeImage, 500)
@@ -235,6 +235,9 @@
 					$('.plate').remove()
 					$(".swords_img").addClass("inactive")
 					$('.pillar').addClass('inactive')
+					$('.boi').removeClass("jharoka_in")
+
+					
 				}
 				else
 				{	
@@ -249,7 +252,10 @@
 					$('.hang3_icon').addClass("cenpunch_ani")
 					$('.hang4_icon').addClass("cenpunch_ani")
 					$(".swords_img").addClass("inactive")		
-					$('.pillar').removeClass('inactive')			
+					$('.pillar').removeClass('inactive')	
+					$('.boi').addClass("jharoka_in")
+					$('.pillar').attr('height',DocHeight)
+
 
 				}
 			})
@@ -257,12 +263,16 @@
 
 			$(window).resize(() =>{
 					var DocWidth = $(window).width()
+					var DocHeight = $(window).height()
 					console.log(DocWidth)
 					if(DocWidth>=500){
 					$('.jharokha_img').attr("src","elmt/jharokha_gate.png")
 					$('.jharokha_img').addClass("jharokha1")
 					$('.jharokha_img').removeClass("jharokha2")
-					('.pillar').addClass("inactive")
+					$('.pillar').addClass("inactive")
+					$('.boi').removeClass("jharoka_in")
+
+
 				}
 				else{
 					$('.jharokha_img').attr("src","elmt/jarokha_gate_final.png")
@@ -278,7 +288,10 @@
 					$('.hang2_icon').addClass("cenpunch_ani")
 					$('.hang3_icon').addClass("cenpunch_ani")
 					$('.hang4_icon').addClass("cenpunch_ani")
-					('.pillar').removeClass("inactive")
+					$('.pillar').removeClass("inactive")
+					$('.boi').addClass("jharoka_in")
+					$('.pillar').attr('height',DocHeight)
+
 				}
 					
 				

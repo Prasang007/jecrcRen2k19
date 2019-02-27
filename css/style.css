@@ -369,14 +369,16 @@ html , body {
 	.pillar{
 		position: absolute;
 		top:18%; 
-		width: 8%;
+		
 		/*height: 100%;*/
 	}
 	.r{
 		right: 0;
+		width: 8.8%;
 	}
 	.l{
 		left: 0;
+		width: 8.2%;
 	}
 
 	.jharokha {
@@ -415,7 +417,13 @@ html , body {
 	.marg_top{
 		width: 100%;
 		height:12%;
+	}	
+	@media only screen and (max-width: 500px){
+		.marg_top{
+			height: 8%;
+		}
 	}
+
 	.logo {
 		width: 100%;
 		height: 40%;

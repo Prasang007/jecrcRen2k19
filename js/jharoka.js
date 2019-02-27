@@ -8,12 +8,12 @@ $(document).ready(() => {
 				// $('#center-preload').delay(2000).fadeOut('slow',"linear",function(){ clearInterval(timerId) })
 					
 					console.log(DocWidth)
-					if(DocWidth>=800){
+					if(DocWidth>=768){
 					$('.jharokha_img').attr("src","elmt/jharokha1old.png")
 					// $('.jharokha_img').addClass("jharokha1")
 					// $('.jharokha_img').removeClass("jharokha2")
 					$('.jharokha').addClass("jharoka-back")
-					$('.pillar').addClass('inactive')
+					$('.pillar').addClass("inactive")
 					// $('.gate-contain').remove()
 					// $('.knobs-right').remove()
 					// $('.knobs-left').remove()
@@ -47,7 +47,7 @@ $(document).ready(() => {
 					var DocHeight = $(document).height()
 					console.log(DocWidth)
 					console.log(DocHeight)
-					if(DocWidth>=800){
+					if(DocWidth>=768){
 					$('.jharokha_img').attr("src","elmt/jharokha1old.png")
 					// $('.jharokha_img').addClass("jharokha1")
 					// $('.jharokha_img').removeClass("jharokha2")

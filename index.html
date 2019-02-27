@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
  
 </head>
@@ -24,9 +24,11 @@
 				</div>
 			</div>
 			<!-- <img src="elmt/jharokha_gate.png" class="jharokha_img jharokha1 inactive">	 -->
+			<img src="elmt/pillarc.png" class="l pillar" alt="pillar left">
+			<img src="elmt/pillar22.png" class="r pillar" alt="pillar right">
+			<div class="boi">
 			<img src="elmt/jarokha_gate_final.png" class="jharokha2 jharokha_img">
-			<img src="elmt/pillarc.png" class="pillar l " alt="">
-			<img src="elmt/pillar22.png" class="pillar r " alt="">
+			</div>
 			<img src="elmt/padlock-closed.png" class="padlock-img padlock-ani lock" alt="">
 			<div class="knobs-left ">
 				
@@ -232,6 +234,7 @@
 					$('.padlock-img').remove()
 					$('.plate').remove()
 					$(".swords_img").addClass("inactive")
+					$('.pillar').addClass('inactive')
 				}
 				else
 				{	
@@ -245,7 +248,8 @@
 					$('.hang2_icon').addClass("cenpunch_ani")
 					$('.hang3_icon').addClass("cenpunch_ani")
 					$('.hang4_icon').addClass("cenpunch_ani")
-					$(".swords_img").addClass("inactive")					
+					$(".swords_img").addClass("inactive")		
+					$('.pillar').removeClass('inactive')			
 
 				}
 			})
@@ -258,7 +262,7 @@
 					$('.jharokha_img').attr("src","elmt/jharokha_gate.png")
 					$('.jharokha_img').addClass("jharokha1")
 					$('.jharokha_img').removeClass("jharokha2")
-					$()
+					('.pillar').addClass("inactive")
 				}
 				else{
 					$('.jharokha_img').attr("src","elmt/jarokha_gate_final.png")
@@ -274,6 +278,7 @@
 					$('.hang2_icon').addClass("cenpunch_ani")
 					$('.hang3_icon').addClass("cenpunch_ani")
 					$('.hang4_icon').addClass("cenpunch_ani")
+					('.pillar').removeClass("inactive")
 				}
 					
 				

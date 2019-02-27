@@ -3,7 +3,7 @@ var DocWidth = $(window).width()
 var DocHeight = $(document).height()
 $(document).ready(() => {
 			
-			// const timerId = setInterval(changeImage, 500)
+		
 			$(window).load(() => {
 				// $('#center-preload').delay(2000).fadeOut('slow',"linear",function(){ clearInterval(timerId) })
 					
